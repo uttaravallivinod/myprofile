@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vinod • Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <!-- Prism.js for syntax highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+     <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="container">
+        <div style="font-size:25px;font-weight:1000;letter-spacing:.3px">VINOD<span style="color:var(--muted)">.Dev</span></div>
+       <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  <nav id="navbar">
+    <a href="#projects">Projects</a>
+    <a href="#mskills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1>Turn Hours of Work into Minutes with Automation</h1>
+            <p>I'm Vinod, I help businesses replace repetitive, error-prone manual work with custom Python automation
+                solutions — from data scraping and report generation to API integrations and task scheduling.</p>
+            <div class="code-editor">
+                <div class="editor-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="editor-title">python</span>
+                </div>
+                <pre><code># my_goal defined
+print(my_goal)</code></pre>
+                <button id="runBtn">Run ▶</button>
+                <div id="output" class="output"></div>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <div class="accordion">
+                <div class="accordion-header">Automatic Server Repair System</div>
+                <div class="accordion-content">
+                    <div class="info-block impact">
+                        <h4>Overview</h4>
+                        <p>Developed an automation system that monitors server health and ensures product builds are
+                            always ready for daily regression testing. If a server’s state becomes unstable or
+                            corrupted, the system automatically reinstalls the build, minimizing downtime and manual
+                            intervention.</p>
+                    </div>
+                    <div class="info-block skills">
+                        <h4>Skills Used</h4>
+                        <ul>
+                            <li><b>Python </b>(Automation & backend logic)</li>
+                            <li><b>FastAPI </b>(API for monitoring and triggering repairs)</li>
+                            <li><b>Requests, Paramiko</b>(API Calls & Remote Machine Operation)</li>
+                        </ul>
+                    </div>
+                    <div class="info-block features">
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Monitors server health status in intervals via API calls.</li>
+                            <li>Detects unstable or malfunctioning server states.</li>
+                            <li>Automatically reinstalls product builds when required.</li>
+                            <li>Logs all server repairs and actions for audit and tracking.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-header">Automated Job Post Scraper & Facebook Publisher</div>
+                <div class="accordion-content">
+                    <div class="info-block impact">
+                        <h4>Overview</h4>
+                        <p>Implemented a Python-based automation tool that scrapes job postings from selected job boards and
+                            automatically publishes them to a Facebook page. This helps businesses and recruiters share
+                            openings instantly without manual posting.</p>
+                    </div>
+                    <div class="info-block skills">
+                        <h4>Technologies Used</h4>
+                        <ul>
+                            <li><b>Python</b> (Core automation)</li>
+                            <li><b>Requests, BeautifulSoup</b> (Web scraping)</li>
+                            <li><b>PostgreSQL</b> (Data storage)</li>
+                            <li><b>Facebook Graph API</b> (Automated posting)</li>
+                            <li><b>HTML/CSS + Django</b> (Web interface for admin control)</li>
+                        </ul>
+                    </div>
+                    <div class="info-block features">
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Scrapes job listings from predefined job websites.</li>
+                            <li>Automatically posts job details to Facebook using Graph API.</li>
+                            <li>Web-based admin interface to review, edit, or remove job posts before publishing.</li>
+                            <li>Stores all job post data in a PostgreSQL database for easy management.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-header">Student Feedback Collector & Analyzer</div>
+                <div class="accordion-content">
+                    <div class="info-block impact">
+                        <h4>Overview</h4>
+                        <p>Developed a Django-based web application to help educational institutes collect, organize, and analyze
+                            student feedback for faculty members. The system sends personalized feedback links to
+                            students based on their enrolled courses, allowing them to evaluate each faculty member on
+                            various parameters such as teaching quality, behavior, and class engagement.</p>
+                    </div>
+                    <div class="info-block skills">
+                        <h4>Skills Used</h4>
+                        <ul>
+                            <li><b>Django, Python </b>(Backend)</li>
+                            <li><b>HTML, CSS, JavaScript </b>(Frontend)</li>
+                            <li><b>PostgreSQL</b> (Database)</li>
+                            <li><b>Pandas, Canvas JS Charts</b> (Analysis & Reports)</li>
+                        </ul>
+                    </div>
+                    <div class="info-block features">
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Automated distribution of feedback forms to students with course-based faculty details.
+                            </li>
+                            <li>Evaluation fields for multiple performance aspects (teaching, behavior, engagement,
+                                etc.).</li>
+                            <li>Admin Dashboard for college management to view performance analytics.</li>
+                            <li>Visual graphs and charts showing faculty performance trends.</li>
+                            <li>Secure login for students and administrators with email OTP</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-header">Automatic Regression Analysis System</div>
+                <div class="accordion-content">
+                    <div class="info-block impact">
+                        <h4>Overview</h4>
+                        <p>Built an automation system to streamline the daily regression analysis process for thousands
+                            of test cases. The tool automatically identifies genuine product issues vs. test script
+                            issues by rerunning failed cases, checking historical data for flakiness, and generating
+                            actionable reports.</p>
+                    </div>
+                    <div class="info-block skills">
+                        <h4>Skills Used</h4>
+                        <ul>
+                            <li><b>Python </b>(Core automation)</li>
+                            <li><b>Jenkins </b>(Automated execution pipeline)</li>
+                            <li><b>Celery, Requests</b> (Distributed task scheduling & API Calls)</li>
+                            <li><b>PostgreSQL</b> (Test result storage)</li>
+                        </ul>
+                    </div>
+                    <div class="info-block features">
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Automatically detects failed test cases from daily regression runs.</li>
+                            <li>Installs the latest product builds locally for re-execution.</li>
+                            <li>Reruns failed cases to verify if issues are genuine or flaky.</li>
+                            <li>Maintains historical performance data for each test case.</li>
+                            <li>Generates summary reports with issue classification for QA teams.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-header">Live Log Viewer</div>
+                <div class="accordion-content">
+                    <div class="info-block impact">
+                        <h4>Overview</h4>
+                        <p>Developed a Flask-based web application that streams real-time logs from remote machines
+                            directly to a browser interface. This allows developers, testers, and system admins to
+                            monitor processes without manually logging into servers.</p>
+                    </div>
+                    <div class="info-block skills">
+                        <h4>Skills Used</h4>
+                        <ul>
+                            <li><b>Flask, Python </b>(Backend)</li>
+                            <li><b>JavaScript (SSE - Server-Sent Events) </b>(Real-time log updates)</li>
+                            <li><b>Paramiko</b>(Remote machine operations)</li>
+                            <li><b>HTML/CSS</b> (Frontend UI)</li>
+                        </ul>
+                    </div>
+                    <div class="info-block features">
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Streams live logs from remote machines using Server-Sent Events (SSE).</li>
+                            <li>Provides a simple, browser-based interface for log monitoring.</li>
+                            <li>Supports filtering and searching within live log data.</li>
+                            <li>Eliminates the need for SSH logins to check process statuses.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="mskills" class="container">
+            <h2>Skills</h2>
+            <div class="mskills">
+                <div class="chip">Python</div>
+                <div class="chip">Django</div>
+                <div class="chip">Flask</div>
+                <div class="chip">Requests</div>
+                <div class="chip">BeautifulSoup</div>
+                <div class="chip">PostgreSQL</div>
+                <div class="chip">Jenkins</div>
+                <div class="chip">Celery</div>
+                <div class="chip">JavaScript</div>
+                <div class="chip">Server-Sent Events (SSE)</div>
+                <div class="chip">HTML / CSS</div>
+                <div class="chip">Graph API</div>
+                <div class="chip">Automation Testing</div>
+                <div class="chip">Data Analysis</div>
+                <div class="chip">API Integration</div>
+                <div class="chip">Web Scraping</div>
+                <div class="chip">Task Scheduling</div>
+                <div class="chip">Debugging & Logging</div>
+                <div class="chip">CI/CD Pipelines</div>
+                <div class="chip">Version Control (Git)</div>
+                <div class="chip">Problem Solving</div>
+            </div>
+
+        </section>
+
+        <section id="experience" class="container">
+    <h2>Industry Experience</h2>
+    <div class="timeline">
+        <div class="step">
+            <h4>Software Engineer II (Automation) • Akamai Technologies <span
+                    class="muted">(2024–Present)</span></h4>
+            <p>Designing and implementing advanced Python-based automation systems to streamline QA workflows and server management. Developed tools for automatic server health monitoring and repair, reducing downtime and manual intervention by over 90%.</p>
+        </div>
+        <div class="step">
+            <h4>Software Engineer (Automation) • Sandvine Technologies (Applogic) <span
+                    class="muted">(2022–2024)</span></h4>
+            <p>Created automation solutions for regression analysis, flaky test detection, and real-time log monitoring using Python, Django, Flask, Jenkins, and Celery. Improved regression cycle efficiency by 80% through intelligent rerun systems and historical test analysis.</p>
+        </div>
+        <div class="step">
+            <h4>Software Engineer (Internship) • Microfocus <span class="muted">(2021–2022)</span></h4>
+            <p>Built Python automation workflows to process, clean, and organize large datasets for internal ML projects. Automated repetitive data preparation tasks, reducing processing time by over 60%. Developed scripts to integrate data sources, generate reports, and trigger model training pipelines, improving overall ML experimentation efficiency.</p>
+        </div>
+    </div>
+</section>
+
+
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <p>Email me at <a href="mailto:vinod100g1@gmail.com">vinod100g1@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        © <span id="year"></span> Vinod. Built with love.
+    </footer>
+
+    <button id="themeToggle">🌓</button>
+
+    <script>
+        // Dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Theme toggle
+        const toggleBtn = document.getElementById('themeToggle');
+        toggleBtn.addEventListener('click', () => {
+            document.body.dataset.theme =
+                document.body.dataset.theme === 'light' ? 'dark' : 'light';
+        });
+
+        const headers = document.querySelectorAll('.accordion-header');
+
+        headers.forEach(header => {
+            header.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent click bubbling to document
+                const activeHeader = document.querySelector('.accordion-header.active');
+
+                if (activeHeader && activeHeader !== header) {
+                    activeHeader.classList.remove('active');
+                    const openContent = activeHeader.nextElementSibling;
+                    openContent.style.maxHeight = null;
+                    openContent.classList.remove('open');
+                }
+
+                header.classList.toggle('active');
+                const content = header.nextElementSibling;
+                if (header.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    content.classList.add('open');
+                } else {
+                    content.style.maxHeight = null;
+                    content.classList.remove('open');
+                }
+            });
+        });
+
+        // Close accordion when clicking outside
+        document.addEventListener('click', (e) => {
+            const isClickInside = e.target.closest('.accordion');
+            if (!isClickInside) {
+                const activeHeader = document.querySelector('.accordion-header.active');
+                if (activeHeader) {
+                    activeHeader.classList.remove('active');
+                    const openContent = activeHeader.nextElementSibling;
+                    openContent.style.maxHeight = null;
+                    openContent.classList.remove('open');
+                }
+            }
+        });
+        document.getElementById('runBtn').addEventListener('click', function () {
+            document.getElementById('output').textContent =
+                "Save you time, reduce costs, and make your processes run on autopilot";
+        });
+        document.getElementById('menuToggle').addEventListener('click', function() {
+    document.getElementById('navbar').classList.toggle('show');
+  });
+    </script>
+</body>
+
+</html>
